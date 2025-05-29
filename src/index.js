@@ -112,3 +112,48 @@ axios
 // console.log('I put the pedal to the floor');
 // console.log('Headed north on Mills Avenue');
 // console.log('And listened to the engine roar');
+
+
+
+axios.post('https://trektravel.onrender.com/trips', {
+  name: 'Lina',
+  continent: 'Asia',
+  about: 'A tour around Japan',
+  category: 'casual',
+  weeks: 2,
+  cost: 2500,
+})
+  .then((response) => {
+    console.log('response:', response);
+    console.log('response data:', response.data);
+  })
+  .catch((error) => {
+    console.log('error:', error);
+    console.log('error response:', error.response);
+  })
+  .finally(() => {
+    console.log('finally done!');
+  });
+
+////////////////////////
+// POST - BAD Request //
+///////////////////////
+// const badTripData = {
+//   name: '',
+//   continent: 'North America',
+//   about: 'A tour around good architecture and hot dogs.',
+//   category: 'casual',
+//   weeks: 1,
+//   cost: 180,
+// };
+
+// axios
+//   .post('https://trektravel.onrender.com/trips', badTripData)
+//   .then((response) => {
+//     console.log('response:', response);
+//     console.log('response data:', response.data);
+//   })
+//   .catch((error) => {
+//     console.log('error:', error);
+//     console.log('error response:', error.response);
+//   });
