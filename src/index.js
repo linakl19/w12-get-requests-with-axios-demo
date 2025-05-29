@@ -55,6 +55,21 @@ axios
 //     console.log('error!', error);
 //   });
 
+/////////////////////
+// Finally Clause //
+////////////////////
+
+// axios
+//   .get('https://dog.ceo/api/breeds/list/all')
+//   .then((response) => {
+//     console.log('success!');
+//   })
+//   .catch((error) => {
+//     console.log('error!');
+//   })
+//   .finally(() => {
+//     console.log('this is always executed, no matter what!');
+//   });
 
 ////////////////////////
 // Using Query Params //
